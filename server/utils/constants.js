@@ -1,44 +1,44 @@
-export const GENDER = {
-  MALE: 'male',
-  FEMALE: 'female',
-};
+export const GENDER = [
+  { value: "male", label: "Male" },
+  { value: "female", label: "Female" },
+];
 
-export const SIZE = {
-  SMALL: 'small',
-  MEDIUM: 'medium',
-  LARGE: 'large',
-};
+export const SIZE = [
+  { value: "small", label: "Small" },
+  { value: "medium", label: "Medium" },
+  { value: "large", label: "Large" },
+];
 
-export const SOCIALIZED = {
-  WITH_HUMAN: 'with human',
-  WITH_DOG: 'with dog',
-  BOTH: 'both',
-  NEITHER: 'neither',
-};
+export const SOCIALIZED = [
+  { value: "with human", label: "With Human" },
+  { value: "with dog", label: "With Dog" },
+  { value: "both", label: "Both" },
+  { value: "neither", label: "Neither" },
+];
 
-export const DOG_BREEDS = {
-  AUSTRALIAN_SHEPHERD: 'australian shepherd',
-  BEAGLE: 'beagle',
-  BORDER_COLLIE: 'border collie',
-  BOXER: 'boxer',
-  BULL_TERRIER: 'bull terrier',
-  CHOW_CHOW: 'chow chow',
-  CHIHUAHUA: 'chihuahua',
-  COCKER_SPANIEL: 'cocker spaniel',
-  DACHSHUND: 'dachshund',
-  FRENCH_BULLDOG: 'french bulldog',
-  GERMAN_SHEPHERD: 'german shepherd',
-  GOLDEN_RETRIEVER: 'golden retriever',
-  GREAT_DANE: 'great dane',
-  LABRADOR_RETRIEVER: 'labrador retriever',
-  MALTESE: 'maltese',
-  MIXED_BREED: 'Mixed Breed',
-  PAPILLON: 'papillon',
-  POMERANIAN: 'pomeranian',
-  POODLE: 'poodle',
-  PUG: 'pug',
-  ROTTWEILER: 'rottweiler',
-  SHIBA_INU: 'shiba inu',
-  SIBERIAN_HUSKY: 'siberian husky',
-  YORKSHIRE_TERRIER: 'yorkshire terrier',
-};
+export const DOG_BREEDS = [
+  { value: "australian shepherd", label: "Australian Shepherd" },
+  { value: "beagle", label: "Beagle" },
+  { value: "border collie", label: "Border Collie" },
+  { value: "boxer", label: "Boxer" },
+  { value: "bull terrier", label: "Bull Terrier" },
+  { value: "chow chow", label: "Chow Chow" },
+  { value: "chihuahua", label: "Chihuahua" },
+  { value: "cocker spaniel", label: "Cocker Spaniel" },
+  { value: "dachshund", label: "Dachshund" },
+  { value: "french bulldog", label: "French Bulldog" },
+  { value: "german shepherd", label: "German Shepherd" },
+  { value: "golden retriever", label: "Golden Retriever" },
+  { value: "great dane", label: "Great Dane" },
+  { value: "labrador retriever", label: "Labrador Retriever" },
+  { value: "maltese", label: "Maltese" },
+  { value: "Mixed Breed", label: "Mixed Breed" },
+  { value: "papillon", label: "Papillon" },
+  { value: "pomeranian", label: "Pomeranian" },
+  { value: "poodle", label: "Poodle" },
+  { value: "pug", label: "Pug" },
+  { value: "rottweiler", label: "Rottweiler" },
+  { value: "shiba inu", label: "Shiba Inu" },
+  { value: "siberian husky", label: "Siberian Husky" },
+  { value: "yorkshire terrier", label: "Yorkshire Terrier" },
+];

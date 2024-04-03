@@ -1,10 +1,17 @@
-import Pet from "../model/Pet.js";
+import Dog from "../model/Dog.js";
 
 export const getAllDogs = async (req, res, next) => {
   try {
-    const { search } = req.query;
-    const query = search ? { name: { $regex: search, $options: "i" } } : {};
-    const dogs = await Pet.find(query);
+    const { search, sortOrder } = req.query;
+
+    let query = search ? { name: { $regex: search, $options: "i" } } : {};
+    let sort = { name: 1 };
+
+    if (sortOrder === "desc") {
+      sort = { name: -1 };
+    }
+
+    const dogs = await Dog.find(query).sort(sort);
     res.status(200).json(dogs);
   } catch (error) {
     next(error);
@@ -12,12 +19,11 @@ export const getAllDogs = async (req, res, next) => {
 };
 
 export const getDog = async (req, res, next) => {
-  //updated with try catch
   try {
     const { id } = req.params;
-    const dog = await Pet.findById(id);
+    const dog = await Dog.findById(id);
     if (!dog) {
-      return res.status(404).json({ msg: `Dog not found with ID: ${id}` });
+      return res.status(404).json({ message: `Dog not found with ID: ${id}` });
     }
     res.status(200).json(dog);
   } catch (error) {
@@ -26,10 +32,15 @@ export const getDog = async (req, res, next) => {
 };
 
 export const createDog = async (req, res, next) => {
+  console.log(req.body);
   try {
-    const dog = await Pet.create(req.body);
-    res.status(201).json({ msg: "Dog created", dog });
+    const dog = await Dog.create(req.body);
+    res.status(201).json({ message: "Dog created successfully", dog });
   } catch (error) {
+    console.error("Error in Dog.create:", error);
+    res
+      .status(500)
+      .json({ message: "An error occurred while creating a dog." });
     next(error);
   }
 };
@@ -37,11 +48,13 @@ export const createDog = async (req, res, next) => {
 export const updateDog = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const updatedDog = await Pet.findByIdAndUpdate(id, req.body, { new: true });
+    const updatedDog = await Dog.findByIdAndUpdate(id, req.body, { new: true });
     if (!updatedDog) {
-      return res.status(404).json({ msg: `Dog not found with ID: ${id}` });
+      return res.status(404).json({ message: `Dog not found with ID: ${id}` });
     }
-    res.status(200).json({ msg: "Dog updated", dog: updatedDog });
+    res
+      .status(200)
+      .json({ message: "Dog updated successfully", dog: updatedDog });
   } catch (error) {
     next(error);
   }
@@ -50,11 +63,13 @@ export const updateDog = async (req, res, next) => {
 export const deleteDog = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const deletedDog = await Pet.findByIdAndDelete(id);
+    const deletedDog = await Dog.findByIdAndDelete(id);
     if (!deletedDog) {
-      return res.status(404).json({ msg: `Dog not found with ID: ${id}` });
+      return res.status(404).json({ message: `Dog not found with ID: ${id}` });
     }
-    res.status(200).json({ msg: "Dog deleted", dog: deletedDog });
+    res
+      .status(200)
+      .json({ message: "Dog deleted successfully", dog: deletedDog });
   } catch (error) {
     next(error);
   }
