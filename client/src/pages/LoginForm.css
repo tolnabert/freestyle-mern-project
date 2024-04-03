@@ -1,0 +1,104 @@
+.form-login {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 3px solid #EF6C33;
+  border-radius: 3px;
+  background-color: #6cafc8;
+}
+
+.title-form {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.form-row {
+  margin-bottom: 0.5em;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-row input,
+.form-row select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #EF6C33;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.btn-login {
+  display: block;
+  width: auto;
+  padding: 5px 15px;
+  background-color: #0c4a60;
+  color: #ef6c33;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 auto;
+}
+
+.btn-login:hover {
+  background-color: #e1dddb;
+}
+
+.btn-login:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.register-section {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-register-link {
+  text-decoration: none;
+}
+
+.login-register-link:hover {
+  color: #ef6c33;
+}
+
+.login-landing-link-container {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.login-landing-link {
+  width: auto;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 5px 15px;
+  background-color: #0c4a60;
+  color: #ef6c33;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 auto;
+}
+
+.login-landing-link:hover {
+  background-color: #e1dddb;
+}
+
+.landing-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 5px;
+  color: #007bff;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0rem;
+}

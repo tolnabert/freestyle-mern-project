@@ -1,0 +1,29 @@
+.nav-links {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #ef6c33;
+  border-radius: 3px;
+  background-color: #abdff1;
+  padding: 0.5rem;
+}
+
+.btn-link{
+  text-decoration: none;
+  padding: 5px 15px;
+  background-color: #0c4a60;
+  color: #ef6c33;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-link:hover{
+  background-color: #e1dddb;
+}
+.btn-link:active{
+  background-color: #ef6c33;
+}
+.btn-link:not(:last-child) {
+  margin-right: 10px;
+}
