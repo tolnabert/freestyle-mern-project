@@ -35,7 +35,7 @@ const port = process.env.PORT || 5100;
 
 try {
   await mongoose.connect(
-    `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_KEY}@cluster0.8qcksfu.mongodb.net/`
+    `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_KEY}@${process.env.MONGO_CLUSTER}.${process.env.MONGO_IDENTIFIER}.mongodb.net/`
   );
   app.listen(port, () => {
     console.log(`Server running on PORT ${port}`);
