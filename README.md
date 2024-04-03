@@ -1,2 +1,1 @@
-# freestyle-mern-project
-Final team project for the Web module - MERN stack
+No starter code is provided. Start from scratch!
