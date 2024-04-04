@@ -14,19 +14,19 @@ const ConfirmationDialog = ({
   }
 
   return (
-    <div className="dialog-overlay">
-      <div className="dialog-container">
-        <div className="dialog-header">
+    <div className='dialog-overlay'>
+      <div className='dialog-container'>
+        <div className='dialog-header'>
           <h2>{title}</h2>
         </div>
-        <div className="dialog-content">
+        <div className='dialog-content'>
           <p>{content}</p>
         </div>
-        <div className="dialog-actions">
-          <button onClick={onCancel} className="btn btn-cancel">
+        <div className='dialog-actions'>
+          <button onClick={onCancel} className='btn btn-cancel'>
             {cancelLabel}
           </button>
-          <button onClick={onConfirm} className="btn btn-confirm">
+          <button onClick={onConfirm} className='btn btn-confirm'>
             {confirmLabel}
           </button>
         </div>

@@ -48,7 +48,7 @@
 }
 
 .dog-details ul li {
-  color: #e1dddb; /* Change 'blue' to the color you prefer */
+  color: #e1dddb;
 }
 
 .btn-container {
@@ -84,7 +84,7 @@
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .dogs-btn:hover {
@@ -94,10 +94,9 @@
 .placeholder-image {
   width: 205px;
   height: 135px;
-  background-color: #ccc; /* Placeholder background color */
+  background-color: #ccc;
 }
 
-/* Confirmation Dialog */
 .dialog-overlay {
   position: fixed;
   top: 0;
