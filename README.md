@@ -22,13 +22,7 @@ Welcome to the Freestyle MERN Project!
       </ul>
     </li>
     <li><a href="#prerequisites">Prerequisites</a></li>
-    <li>
-      <a href="#project-setup">Project Setup</a>
-      <ul>
-        <li><a href="#manual-setup">Manual Setup</a></li>
-        <li><a href="#docker-setup">Docker Setup</a></li>
-      </ul>
-    </li>
+    <li><a href="#project-setup">Project Setup</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
   </ol>
@@ -123,9 +117,9 @@ Visit **http://localhost:5173** in your web browser to access the app. You can p
 - [x] **User Registration**
 - [x] **User Login**
 - [x] Add Dog Profile
-- [] Search for Partners
-- [] Secure Authentication
-- [] Admin Panel
+- [ ] Search for Partners
+- [ ] Secure Authentication
+- [ ] Admin Panel
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
